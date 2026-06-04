@@ -1,0 +1,22 @@
+#BGC {
+    background-color: whitesmoke;
+  }
+  #BGC:hover {
+    background-color: yellow;
+  }
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    padding: 5px 10px;
+    text-align: center;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .grafico {
+    margin: 20px 0;
+  }
+  

@@ -1,0 +1,19 @@
+header {
+    background-color: #1976d2;
+    padding: 10px;
+  }
+  
+  nav button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: white;
+    color: #1976d2;
+  }
+  
