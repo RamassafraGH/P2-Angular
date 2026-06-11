@@ -1,12 +1,22 @@
-<header>
-  <nav>
-    <button routerLink="/home">Home</button>
-    <button routerLink="/ventas">Ventas</button>
-    <button routerLink="/sucursales">Sucursales</button>
-    <button routerLink="/clientes">Clientes</button>
-  </nav>
+<header class="main-header">
+  <div class="header-container">
+    <div class="brand">
+      <span class="brand-icon">💼</span>
+      <h1>Sistema de Administración de Empresa</h1>
+    </div>
+    <nav class="nav-menu">
+      <button routerLink="/home" class="nav-btn" routerLinkActive="active-link">Home</button>
+      <button routerLink="/ventas" class="nav-btn" routerLinkActive="active-link">Ventas</button>
+      <button routerLink="/sucursales" class="nav-btn" routerLinkActive="active-link">Sucursales</button>
+      <button routerLink="/clientes" class="nav-btn" routerLinkActive="active-link">Clientes</button>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="content-wrapper">
   <router-outlet></router-outlet>
 </main>
+
+<footer class="main-footer">
+  <p>&copy; 2026 AngularRM. Todos los derechos reservados.</p>
+</footer>

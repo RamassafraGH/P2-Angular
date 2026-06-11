@@ -1,11 +1,31 @@
-<div #contenedor></div>
+<section class="sales-dashboard">
+  <!-- Encabezado de Ventas -->
+  <div class="dashboard-header">
+    <h2>Análisis de Ventas por Sucursal</h2>
+    <p>Visualización del rendimiento financiero mensual de nuestras sedes principales.</p>
+  </div>
 
-<div class="grafico">
-  <h3>Gráfico de Barras</h3>
-  <svg #graficoBarras width="600" height="300" style="border:1px solid black"></svg>
-</div>
+  <!-- Contenedor de la Tabla Dinámica -->
+  <div class="card table-card">
+    <div #contenedor class="table-responsive"></div>
+  </div>
 
-<div class="grafico">
-  <h3>Gráfico de Líneas</h3>
-  <svg #graficoLineas width="600" height="300" style="border:1px solid black"></svg>
-</div>
+  <!-- Contenedor del Grid de Gráficos -->
+  <div class="charts-grid">
+    <!-- Gráfico de Líneas -->
+    <div class="card chart-card">
+      <h3>📈 Tendencia Mensual (Líneas)</h3>
+      <div class="svg-container">
+        <svg #graficoLineas viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+    </div>
+
+    <!-- Gráfico de Barras -->
+    <div class="card chart-card">
+      <h3>📊 Distribución Acumulada (Barras Apiladas)</h3>
+      <div class="svg-container">
+        <svg #graficoBarras viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+    </div>
+  </div>
+</section>

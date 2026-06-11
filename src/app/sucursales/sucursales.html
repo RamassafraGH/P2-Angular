@@ -1,1 +1,41 @@
-<p>sucursales works!</p>
+<section class="branches-container">
+    <!-- Encabezado de la Sección -->
+    <div class="branches-header">
+      <h2>Nuestras Sucursales</h2>
+      <p>Visualiza y administra la información de las sedes operativas de la empresa.</p>
+    </div>
+  
+    <!-- Contenedor de Tarjetas (Grid) -->
+    <div class="branches-grid">
+      @for (s of suc; track s.id) {
+        <div class="branch-card">
+          <!-- Badge de ID superior -->
+          <span class="branch-id">ID #{{s.id}}</span>
+          
+          <!-- Detalle Principal -->
+          <div class="branch-info">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h3>Sucursal {{s.id}}</h3>
+              <p class="address">{{s.dir}}</p>
+            </div>
+          </div>
+  
+          <!-- Métrica de Empleados -->
+          <div class="branch-meta">
+            <div class="meta-item">
+              <span class="meta-icon">👥</span>
+              <span class="meta-label">Personal:</span>
+              <span class="meta-value">{{s.nEmp}} Empleados</span>
+            </div>
+          </div>
+          
+          <!-- Botón de acción rápido simulado -->
+          <div class="branch-actions">
+            <button class="btn-action">Gestionar Sede</button>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+  
