@@ -87,4 +87,9 @@
     margin: 0;
     line-height: 1.5;
   }
+  a {
+    text-decoration: none;   /* elimina subrayado por defecto */
+    color: #0f172a;
+  }
+
   
