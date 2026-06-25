@@ -7,22 +7,23 @@
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   background-color: #f8fafc;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Header */
 .main-header {
-  background-color: #ffffff; 
+  background-color: var(--bg-header); 
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
-  z-index: 9999 !important;
+  z-index: 9999;
   padding: 0 1.5rem;
 }
-
 
 .header-container {
   max-width: 1200px;
@@ -79,22 +80,28 @@ body {
   font-weight: 600;
 }
 
+/* Contenido */
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   min-height: calc(100vh - 140px); 
 }
 
+/* Footer */
 .main-footer {
   text-align: center;
   padding: 1.5rem;
   border-top: 1px solid var(--border-color);
-  background-color: var(--bg-header);
+  background-color: var(--bg-header); /* mismo color que el header */
   color: var(--text-light);
   font-size: 0.85rem;
   margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;

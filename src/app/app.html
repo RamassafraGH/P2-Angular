@@ -2,7 +2,7 @@
   <div class="header-container">
     <div class="brand">
       <span class="brand-icon">💼</span>
-      <h1>Sistema de Administración de Empresa</h1>
+      <h1>Bienvenidos a mi proyector de Angular</h1>
     </div>
     <nav class="nav-menu">
       <button routerLink="/home" class="nav-btn" routerLinkActive="active-link">Home</button>
@@ -10,6 +10,7 @@
       <button routerLink="/sucursales" class="nav-btn" routerLinkActive="active-link">Sucursales</button>
       <button routerLink="/clientes" class="nav-btn" routerLinkActive="active-link">Clientes</button>
     </nav>
+    <app-reloj></app-reloj>
   </div>
 </header>
 
@@ -17,6 +18,4 @@
   <router-outlet></router-outlet>
 </main>
 
-<footer class="main-footer">
-  <p>&copy; 2026 AngularRM. Todos los derechos reservados.</p>
-</footer>
+<app-footer></app-footer>
